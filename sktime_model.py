@@ -58,7 +58,7 @@ def pipeline():
   mlflow.set_experiment(experiment_name)
   # 1 load data
 
-  url =  sys.argv[1] 'https://github.com/pterancobo/ADS_Case_problem/blob/main/data/train.csv?raw=true'
+  url =  sys.argv[1] 
   # url = 'https://github.com/pterancobo/ADS_Case_problem/blob/main/data/train.csv?raw=true'
   raw_df = pd.read_csv(url).dropna() # remove na values, as there is empty stuff at the end
 
